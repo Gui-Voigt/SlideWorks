@@ -1,14 +1,15 @@
-function Card ( {conteudo} ){
-    return(
-        <li>
+function Card (props){
+
+return(
+        <li> 
             <div>
-                <p> imagem aqui </p>
-                <p>{conteudo.nome}</p>
-                <p>{conteudo.autor}</p>
-                <p>{conteudo.desc}</p>
+                <img src={props.conteudo.image}></img>
+                <p>{props.conteudo.title}</p>
+                <p>{props.conteudo.author}</p>
+                <p>{props.conteudo.description}</p>
                 <div>
-                    <p>{conteudo.genero}</p>
-                    <p>{conteudo.data}</p>
+                    <p>{props.conteudo.gender}</p>
+                    <p>{props.conteudo.published}</p>
                 </div>
             </div>
         </li>
@@ -16,3 +17,5 @@ function Card ( {conteudo} ){
 }
 
 export default Card
+                
+                
