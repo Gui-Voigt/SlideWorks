@@ -18,7 +18,7 @@ function Content (){
         .catch( (err) => ("Ops!, An error ocourr" + err) )
     }, [])
 
-    cards.length = 1
+    cards.length = 2
     
     return(
         <ul>

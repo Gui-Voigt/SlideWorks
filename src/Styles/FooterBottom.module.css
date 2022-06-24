@@ -1,0 +1,17 @@
+.footerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: #FFF;
+    font-weight: 100;
+
+    padding-top: 3em;
+}
+
+.footerLeft, .footerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 3em;
+}
