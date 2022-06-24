@@ -6,7 +6,19 @@
 .navbar ul li{
     list-style: none;
     padding: .5em;
+}
+
+.liLink {
     font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+
+    transition: .2s;
+}
+
+.liLink:hover{
+    color: #2264D1;
+    font-size: 1.05rem;
 }
 
 .navbar ul li img{

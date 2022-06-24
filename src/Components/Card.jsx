@@ -16,7 +16,6 @@ function reformData (data){
 
 return(
         <li className={styles.card}> 
-        {reformData(conteudo.published)}
             <div>
 
                 <img src={conteudo.image}></img>

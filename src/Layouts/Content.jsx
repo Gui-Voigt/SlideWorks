@@ -13,7 +13,6 @@ function Content (){
         .get("/api/v1/books")
         .then( (result) => {
                 setCards(result.data.data)
-                console.log(cards)
             }
         )
         .catch( (err) => ("Ops!, An error ocourr" + err) )

@@ -5,7 +5,7 @@ function FooterTop(){
     return(
         <div className={styles.footerTop}>
 
-            <img src={logo} alt="Logotipo da SlideWorks" />
+            <img src={logo} alt="Logotipo da Libslide" />
 
         </div>
     )
