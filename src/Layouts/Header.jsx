@@ -6,7 +6,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 function Header (){
     return(
         <header className={styles.header}>
-            <img src={logo} alt="Logotipo da Bibble"/>
+            <img className={styles.logo} src={logo} alt="Logotipo da Bibble"/>
             <Router><Navbar/></Router>
         </header>
     )

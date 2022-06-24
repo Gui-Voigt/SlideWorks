@@ -10,3 +10,36 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
+
+@media (max-width: 1200px){
+    footer{
+        margin: 0;
+        padding: 0;
+        height: auto;
+        padding: 2em;
+    }
+}
+
+@media (min-width:841px) and (max-width:1200px){
+    footer{
+        padding: 0 144px 0 77px;
+    }
+}
+
+@media (min-width:1600px) and (max-width:1999px){
+    footer{
+        padding: 0 10em 0 5em ;
+    }
+}
+
+@media (min-width:2000px) and (max-width:3999px){
+    footer{
+        padding: 0 15em 0 7.5em;
+    }
+}
+
+@media (min-width:4000px){
+    footer{
+        padding: 15em 30em 15em 15em;
+    }
+}

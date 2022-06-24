@@ -1,6 +1,7 @@
 .navbar ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .navbar ul li{
@@ -23,4 +24,40 @@
 
 .navbar ul li img{
     padding-left: 2em;
+}
+
+@media (max-width:560px){
+    .navbar{
+        max-width: 90%;
+    }
+
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px){
+    .navbar{
+        font-size: 1.5rem;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width:2000px) and (max-width:3999px){
+    .navbar img {
+        max-height: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width:4000px){
+    .navbar img {
+
+        max-height: 40px;
+        height: 40px;
+    }
 }

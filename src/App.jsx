@@ -9,7 +9,7 @@ import styles from './Styles/Global.module.css'
 function App() {
 
   return (
-   <>
+   <div className={styles.body}>
 
     <Header/>
 
@@ -24,7 +24,7 @@ function App() {
     <Footer/>
       
 
-   </>
+   </div>
   )
 }
 

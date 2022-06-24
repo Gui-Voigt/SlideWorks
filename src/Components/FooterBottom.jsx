@@ -7,7 +7,6 @@ const facelink = "https://www.facebook.com/profile.php?id=100011160456845"
 const twitterlink = "https://twitter.com/"
 const instalink = "https://www.instagram.com/g_voigt/"
 
-
 function FooterBottom (){
     return(
         <div className={styles.footerBottom}>

@@ -19,6 +19,8 @@ function Content (){
     }, [])
 
     
+cards.length = 8
+
     return(
         <content>
             <ul>
@@ -32,13 +34,3 @@ function Content (){
 
 export default Content
 
-
-/*
-cards.map(
-    (card) => ( 
-        <Card key={card.id} content={card}/>
-    )
-)
-
-
-        */

@@ -21,3 +21,44 @@
     color: #FFF;
     font-weight: 100;
 }
+
+@media (max-width: 1200px){
+    .footerBottom{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        padding-top: 1.5em;
+    }
+    
+
+    .footerLeft, .footerRight{
+        gap: 2em;
+        justify-content: center;
+    }
+}
+
+@media (min-width:841px) and (max-width:1200px){
+    .footerBottom{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:2000px) and (max-width:3999px){
+    .footerRight img {
+        height: 1.5em;
+    }
+
+    .footerLeft p{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width:4000px){
+    .footerRight img {
+        height: 3em;
+    }
+
+    .footerLeft p{
+        font-size: 3em;
+    }
+}

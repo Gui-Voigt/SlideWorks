@@ -7,6 +7,31 @@
     padding: 0 0 3em;
 }
 
-img {
+.footerTop img {
     height: 1.5em;
+}
+
+@media (max-width: 1200px){
+    .footerTop{
+        justify-content: center;
+        padding:  1.5em 0;
+    }
+}
+
+@media (min-width:841px) and (max-width:1200px){
+    .footerTop img{
+        height: 2em;
+    }
+}
+
+@media (min-width:2000px) and (max-width:3999px){
+    .footerTop img {
+        height: calc(1.5 * 1.5em);
+    }
+}
+
+@media (min-width:4000px){
+    .footerTop img {
+        height: calc(3 * 1.5em);
+    }
 }
