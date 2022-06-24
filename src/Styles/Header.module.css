@@ -1,0 +1,16 @@
+.header {
+    min-width: 100vw;
+    height: 99px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 1px #CCC solid;
+    padding: 0 288px 0 154px;
+}
+
+.header img {
+    max-height: 32px;
+}

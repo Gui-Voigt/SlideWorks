@@ -1,6 +1,9 @@
+import styles from '../Styles/Navbar.module.css'
+import search from '../Images/search.svg'
+
 function Navbar (){
     return(
-        <nav>
+        <nav className={styles.navbar}>
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -8,7 +11,7 @@ function Navbar (){
                 <li>Pricing</li>
                 <li>Gallery</li>
                 <li>Team</li>
-                <li>Search</li>
+                <li><img src={search} alt="Símbolo de pesquisa" /></li>
             </ul>
         </nav>
     )

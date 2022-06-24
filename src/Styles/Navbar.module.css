@@ -1,0 +1,14 @@
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: .5em;
+    font-weight: 400;
+}
+
+.navbar ul li img{
+    padding-left: 2em;
+}

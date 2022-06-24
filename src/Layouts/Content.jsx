@@ -11,7 +11,6 @@ function Content (){
         api
         .get("/api/v1/books")
         .then( (result) => {
-                setCards([1])
                 setCards(result.data.data)
                 console.log(cards)
             }
@@ -19,6 +18,7 @@ function Content (){
         .catch( (err) => ("Ops!, An error ocourr" + err) )
     }, [])
 
+    cards.length = 1
     
     return(
         <ul>
