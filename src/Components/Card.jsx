@@ -1,19 +1,32 @@
 import styles from '../Styles/Card.module.css'
 
-function Card (props){
+function Card ({conteudo}){
+
+function reformData (data){
+    const dataSplited = data.split("-")
+
+    const day = dataSplited[2]
+    const mounthsList = [ "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+    const mounth = mounthsList[parseInt(dataSplited[1]) - 1]
+    const year = (dataSplited[0].split(""))[2] + (dataSplited[0].split(""))[3]
+
+    const redata = (day + " " + mounth + ". " + year)
+    return(redata)
+}
 
 return(
         <li className={styles.card}> 
+        {reformData(conteudo.published)}
             <div>
 
-                <img src={props.conteudo.image}></img>
-                <p>{props.conteudo.title}</p>
-                <p>{props.conteudo.author}</p>
-                <p className={styles.description}>{props.conteudo.description}</p>
+                <img src={conteudo.image}></img>
+                <p>{conteudo.title}</p>
+                <p>{conteudo.author}</p>
+                <p className={styles.description}>{conteudo.description}</p>
 
                 <div className={styles.cardBottom}>
-                    <p>{props.conteudo.genre}</p>
-                    <p>{props.conteudo.published}</p>
+                    <p>{conteudo.genre}</p>
+                    <p>{reformData(conteudo.published)}</p>
                 </div>
 
             </div>
