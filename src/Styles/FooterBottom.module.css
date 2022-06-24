@@ -15,3 +15,9 @@
     justify-content: start;
     gap: 3em;
 }
+
+.footerLeft a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 100;
+}
