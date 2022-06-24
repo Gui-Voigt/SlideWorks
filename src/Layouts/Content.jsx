@@ -1,5 +1,6 @@
 import Card from '../Components/Card'
 import api from '../Services/api'
+import styles from '../Styles/Content.module.css'
 
 import {useEffect, useState} from 'react'
 
@@ -18,14 +19,15 @@ function Content (){
         .catch( (err) => ("Ops!, An error ocourr" + err) )
     }, [])
 
-    cards.length = 2
     
     return(
-        <ul>
-            {cards.map( (card) => (
-                <Card key={card.id} conteudo={card}/>
-            ))}
-        </ul>
+        <content>
+            <ul>
+                {cards.map( (card) => (
+                    <Card key={card.id} conteudo={card}/>
+                    ))}
+            </ul>
+        </content>
     )
 }
 

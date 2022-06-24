@@ -1,0 +1,12 @@
+content{
+    padding: 0 288px 0 154px;
+}
+    
+
+content ul{
+    
+    margin: 3em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fill , minmax(auto , 259px));
+}

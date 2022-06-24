@@ -3,7 +3,8 @@ footer{
     height: 270px;
     background-color:#1E2833;
 
-    padding: 3em ;
+    padding: 3em 288px 3em 154px;
+
 
     display: flex;
     flex-direction: column;
